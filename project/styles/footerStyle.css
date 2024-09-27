@@ -1,0 +1,82 @@
+.footrt-main {
+  margin-top: 52px;
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* เพิ่ม flex-wrap เพื่อให้ส่วนต่างๆ ห่อหุ้มเมื่อหน้าจอเล็ก */
+}
+
+.contact-info {
+  text-align: left;
+  margin: 10px; /* เพิ่มระยะห่างระหว่างส่วนต่างๆ */
+}
+
+.footer-text {
+  color: #fff;
+}
+
+/* Responsive สำหรับหน้าจอเล็กกว่า 768px (เช่น มือถือและแท็บเล็ต) */
+@media (max-width: 768px) {
+  .footer-section {
+    flex-direction: column; /* เปลี่ยนเป็นแนวตั้งเมื่อหน้าจอแคบ */
+    align-items: center; /* จัดชิดตรงกลางเมื่อหน้าจอแคบ */
+  }
+
+  .contact-info {
+    text-align: center; /* จัดข้อความตรงกลางเมื่อหน้าจอเล็ก */
+    width: 100%; /* ให้ส่วนนี้มีความกว้างเต็มหน้าจอ */
+  }
+}
+
+  .footrt-main {
+    margin-top: 52px;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+  }
+
+  .footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .contact-info {
+    text-align: left;
+  }
+
+  .footer-text {
+    color: #fff;
+  }
+
+  .map iframe {
+    width: 600px;
+    height: 450px;
+    border: 0;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* ปรับขนาดของแผนที่เมื่อหน้าจอแคบลง */
+  @media (max-width: 768px) {
+    .map iframe {
+      width: 100%; /* ปรับความกว้างเป็น 100% ของพื้นที่ที่มี */
+      height: 300px; /* ลดความสูงของแผนที่ */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .map iframe {
+      height: 200px; /* ลดความสูงให้เล็กลงเมื่อหน้าจอแคบมาก */
+    }
+  }
